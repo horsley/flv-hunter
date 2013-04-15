@@ -21,19 +21,19 @@ function save_flv_url(flv_url) {
 
 function url_match(url) {
 	var sina_video = /iask.com\/\d+\.hlv/; //http://112.90.246.22/edge.v.iask.com/101670330.hlv?KID=sina,viask&Expires=1366128000&ssig=NtXvmOsn%2F0&wsiphost=ipdbm
-	sina_video.test(url) && return true;
+	if (sina_video.test(url)) return true;
 
 	//var iqiyi_video = /qiyi.com\/.*?\.f4v/ //http://183.61.178.204/videos2/amusement/20130415/7366d8ada8b6c2e25accbfc6ad4499cc.f4v?key=4be87aaf130a91b4&su=83390d2774fb79348a2cbca909e117d4&client=&z=&mi=7_392382_464738_766934c4d8d04c9c83a0b5df5220691f&bt=&ct=1&e=&tn=17288&range=0-1023&ran=0.6169338403269649
 	//qiyi_video.test(url) && return true;
 
 	var yinyuetai_video = /yinyuetai.com\/.*?\.flv/; //http://113.106.98.226/hc.yinyuetai.com/uploads/videos/common/737B013D62D10C916F8E267063AD26CD.flv?sc=68b4e3f0e14afbe0&br=786&ptp=mv&rd=yinyuetai.com
-	yinyuetai_video.test(url) && return true;
+	if (yinyuetai_video.test(url)) return true;
 
 	//var qq_video = /qq.com\/.*?\.mp4/; //http://112.90.14.24/vlive.qqvideo.tc.qq.com/h0012l8zwwn.p203.1.mp4?sdtfrom=v10&type=mp4&vkey=6F4662A7A57B4F7080C64E93FDF7CD7870C0013D897F14A7F5DE91119965A047A4EA4DED22721C8A&level=3&platform=1&br=31&fmt=sd&sp=0
 	//qq_video.test(url) && return true;
 
 	var common = /.*\.f4v/;
-	common.test(url) && return true;
+	if (common.test(url)) return true;
 
 	return false;
 }
