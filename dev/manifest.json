@@ -1,4 +1,4 @@
-{
+﻿{
    "background": {
       "scripts": [ "background.js" ]
    },
@@ -15,5 +15,5 @@
    "name": "FLV地址寻找器 by horsley",
    "permissions": [ "*://*/", "tabs", "webRequest", "background"],
    "update_url": "http://horsley.github.com/flv-hunter/update.xml",
-   "version": "1.0.0"
+   "version": "1.0.1"
 }
